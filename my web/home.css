@@ -1,0 +1,87 @@
+ul li
+{
+	color:red;
+float:left;
+width:250px;
+height:40px;
+line-height:40px;
+background-color:black;
+opacity:.8;
+text-align:center;
+position:relative;
+font-size:20px;
+font-family:cursive;
+text-decoration:none;
+color:white;
+display:block;
+background:transparent;
+  border: 2px red;
+  border-style: double;
+
+
+}
+ul li a:hover{
+background-color:green;
+}
+ul ul li
+{
+display:none;
+}
+
+ul li:hover ul li
+{
+ display:block;
+}
+ul ul ul
+{
+display:none;
+top:2px;
+position:absolute;
+margin-left:250;
+}
+
+body
+{
+		 background-image: url("p5.jpg");
+	 z-index:-1;
+  background-repeat: no-repeat;
+  background-size: 1360px 900px;
+background-attachment: fixed;
+
+  }
+h2
+{
+	position:bottom;
+  background: red;
+  position: relative;
+  -webkit-animation: mymove ; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+  animation: mymove ;
+  animation-duration: 4s;
+
+ }
+@-webkit-keyframes mymove {
+  from {top: 0px;}
+  to {top: 800px;}
+}
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 800px;}
+}
+@mediaonlyscreenand(max-width: 600px){
+	body{	
+		z-index:-1;
+	  background-image:url("p3.jpg");
+  background-repeat: no-repeat;
+background-attachment: fixed;
+  }
+}
+b
+{
+	color:yellow;
+	font-family: "Times New Roman", Times, serif;
+font-size: 30px;
+
+}
+
